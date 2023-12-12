@@ -25,7 +25,7 @@ export const handleUserRegisterController=async(req:Request,res:Response)=>{
           };
           console.log("payload ",payload)
           const user = await registerUserService(payload);
-      res.status(200).json({ user });
+      res.status(200).json({success: true, data:user });
     }catch (error: any) {
     res.status(500).json({ success: false, error: error.message });
   }
