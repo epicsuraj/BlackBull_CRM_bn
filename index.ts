@@ -1,6 +1,5 @@
-// import bodyParser from "body-parser";
-const bodyParser = require("body-parser")
 import express from "express";
+import bodyParser from "body-parser";
 import databaseConnect from "./config/database";
 import compression from "compression";
 import cookieParser from "cookie-parser";
@@ -25,8 +24,6 @@ const io = new Server(server, {
     credentials: true,
   },
 });
-
-
 
 app.disable("x-powered-by");
 app.use(express.json({ limit: "50mb" }));
