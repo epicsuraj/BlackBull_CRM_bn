@@ -10,8 +10,6 @@ import userRoutes from "./routes/user";
 import cors from "cors";
 
 
-
-
 databaseConnect();
 require("dotenv").config();
 const app = express();
