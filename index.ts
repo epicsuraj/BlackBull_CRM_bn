@@ -5,7 +5,7 @@ import databaseConnect from "./config/database";
 import compression from "compression";
 import cookieParser from "cookie-parser";
 import http from "http";
-import { Server, Socket } from "socket.io";
+import { Server } from "socket.io";
 import rootEndPoint from "./config/endpoint";
 import userRoutes from "./routes/user";
 import cors from "cors";
